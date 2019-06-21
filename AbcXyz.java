@@ -1,6 +1,3 @@
-/*
- * Which of the following methods is secure against SQL injection?
-*/
 public class AbcXyz {
 
     public List<AccountDTO> findAccountsByCustomerId1(String customerId) throws SQLException {
