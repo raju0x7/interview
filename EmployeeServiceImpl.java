@@ -1,23 +1,9 @@
-import java.io.IOException;
-import java.util.List;
-
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.parsers.SAXParser;
-import javax.xml.parsers.SAXParserFactory;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.web.multipart.MultipartFile;
-import org.xml.sax.SAXException;
-
-import com.securecodewarrior.employee.model.request.EmployeeRequestVO;
-import com.securecodewarrior.employee.processors.EmployeeXmlProcessors;
-import com.securecodewarrior.employee.service.EmployeeService;
+// Find vulnerability in the below code?
 
 public class EmployeeServiceImpl implements EmployeeService {
 
 	private static Logger logger = LoggerFactory.getLogger(EmployeeServiceImpl.class);
-
+	
 	@Override
 	public List<EmployeeRequestVO> uploadEmployeeUsingXml(MultipartFile file) {
 		List<EmployeeRequestVO> employees = null;
