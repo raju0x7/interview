@@ -1,3 +1,5 @@
+<!-- Find vulnerability in below code -->
+
 <?php
     $file = $_GET[‘file’];
     if(isset($file)) {
