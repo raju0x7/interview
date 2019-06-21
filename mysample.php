@@ -1,3 +1,5 @@
+<!-- Find vulnerability/vulnerabilities in below code -->
+
 <b><a href="?a=name">$_GET['a']</a> | <a href="?aa=name">$_GET['aa']</a> 
 a:  <br>
 aa: 
