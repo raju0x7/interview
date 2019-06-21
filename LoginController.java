@@ -47,7 +47,7 @@ public class LoginController {
 			FailedLoginAttempt failed = new FailedLoginAttempt();
 			failed.setUsername(username);
 			failed.setOcurrence(new Date());
-			
+			log.info("DB Failure for the given: Username-"+username+" password:"+password);
 			redir.addFlashAttribute("errorMessage", "Bad credentials.");
 			redir.addFlashAttribute("username", username);
 			return "redirect:/login";
